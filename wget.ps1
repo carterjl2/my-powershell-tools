@@ -1,8 +1,8 @@
 param(
     [Parameter(Mandatory)]
-    $url,
+    [string]$url,
     [Parameter(Mandatory)]
-    $name
+    [string]$name
 )
 
 Invoke-WebRequest $url -OutFile $name
